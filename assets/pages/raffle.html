@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mindy Travel</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <nav>
+          <a href="../../index.html">Home</a>
+          <a href="./aboutus.html">AboutUs</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./moreinformation.html">More Information</a>
+          <a href="./benefitsandtips.html">Benefits and Tips</a>
+          <a href="#">Raffle</a>
+        </nav>
+        <img
+          class="logo-travel"
+          src="../images/logo.png"
+          alt="logo-mandy-travel"
+        />
+      </div>
+      <section>
+        <h1>RAFFLE</h1>
+        <h2>
+          You can collaborate and participate in a raflle for a 1-week trip
+        </h2>
+      </section>
+    </header>
+    <main>
+      <div class="raffle">
+        <section class="mapa">
+          <h4>To participate you must be from Toronto, Canada</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d369104.49137342!2d-79.70839710771948!3d43.718261897354395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20Ontario%2C%20Canad%C3%A1!5e0!3m2!1ses-419!2sar!4v1687385336857!5m2!1ses-419!2sar"
+            width="500"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+        <form action="../../show_data.html " method="get">
+          <fieldset class="fiel-uno">
+            <label for="first-name">Firs Name</label>
+            <input type="text" name="first-lane" id="first-name" />
+
+            <label for="last-name">Last Name</label>
+            <input type="text" name="second-lane" id="last-name" />
+
+            <label for="personal-email">E-Mail</label>
+            <input type="email" name="bar-email" id="personal-email" />
+
+            <label for="country">Choose Country</label>
+            <select name="country" id="country">
+              <option value="arg">Argentina</option>
+              <option value="fran">Francia</option>
+              <option value="br">Brasil</option>
+              <option value="per">Perú</option>
+              <option value="uru">Uruguay</option>
+            </select>
+
+            <label for="date">Choose Date</label>
+            <input type="date" name="user-date" id="date" />
+          </fieldset>
+          <fieldset class="fiel-dos">
+            <h5>Payment Options</h5>
+            <div>
+              <input type="radio" name="cash" id="cash" />
+              <label for="cash">Cash</label>
+            </div>
+            <div>
+              <input type="radio" name="cash" id="credit" />
+              <label for="credit">Credit Card</label>
+            </div>
+            <div>
+              <input type="radio" name="cash" id="debit" />
+              <label for="debit">Debit Card</label>
+            </div>
+          </fieldset>
+          <fieldset class="fiel-tres">
+            <label for="coment">Message (Optional)</label>
+            <textarea name="coment" id="coment"></textarea>
+            <div>
+              <input type="checkbox" name="accept" id="termins" />
+              <label class="conditions" for="termins"
+                >I accept termins and conditions</label
+              >
+              <input type="submit" value="send" />
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>Created by: Julián Brunelli</p>
+    </footer>
+  </body>
+</html>

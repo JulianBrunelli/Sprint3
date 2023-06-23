@@ -1,0 +1,521 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Orbitron", sans-serif;
+}
+
+body {
+  min-width: 80vw;
+  min-height: 80vh;
+  background-color: hwb(152 53% 0% / 0.699);
+}
+
+header > div {
+  display: flex;
+  background-color: rgb(66, 211, 211);
+  border-radius: 4px;
+  border: 2px solid black;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100vw;
+}
+
+.logo-travel {
+  width: 5rem;
+  height: 3rem;
+  margin-left: 35vw;
+}
+
+.home-div > div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+header > section img {
+  width: 70vw;
+  height: 60vh;
+  border: 2px solid rgb(233, 38, 200);
+}
+
+header > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav a {
+  font-family: cursive;
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin-left: 0.7rem;
+}
+
+nav a:hover {
+  background-color: rgb(43, 83, 117);
+  color: aqua;
+  border-radius: 4px;
+  transition: 0.7s;
+}
+
+.contenido-principal > div {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.about-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-div > div {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.about-div p {
+  margin-left: 12rem;
+}
+
+div p {
+  width: 300px;
+  height: 250px;
+  font-size: 1.3rem;
+  border: 2px solid rgb(233, 38, 200);
+}
+
+main > div img {
+  width: 22rem;
+  height: 16rem;
+  border: 2px solid rgb(233, 38, 200);
+  font-size: 1.4rem;
+}
+
+h1,
+h3 {
+  margin-bottom: 1rem;
+  color: rgb(197, 27, 219);
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+footer {
+  height: 5vh;
+  text-align: center;
+  border: 2px solid rgb(233, 38, 200);
+  margin-top: 4rem;
+}
+
+.boat {
+  width: 70vw;
+  height: 75vh;
+  border: 2px solid rgb(233, 38, 200);
+}
+
+.information-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+table {
+  width: 35rem;
+  height: 30rem;
+  border: 2px solid black;
+  border-radius: 6px;
+  margin-top: 2rem;
+}
+
+td {
+  width: 4.5rem;
+  height: 4.5rem;
+  border: 2px solid black;
+  text-align: center;
+}
+
+#parrafo-contact {
+  width: 100vw;
+  height: 3rem;
+  font-size: 1.3rem;
+  border: 2px solid rgb(233, 38, 200);
+  text-align: center;
+}
+
+.div-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1px;
+}
+
+.uno {
+  margin-top: 2rem;
+}
+
+.uno a {
+  margin-right: 6rem;
+  text-decoration: none;
+}
+
+#benefits-list > div {
+  display: flex;
+  gap: 3rem;
+}
+
+.lista1 {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  margin-top: 3rem;
+}
+
+.lista1 ol {
+  list-style-position: inside;
+}
+
+.lista1 li {
+  margin-top: 2rem;
+}
+
+.lista2 {
+  display: flex;
+  gap: 6.3rem;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-left: 7rem;
+}
+
+.lista2 ol {
+  list-style-position: inside;
+}
+
+.lista2 li {
+  margin-top: 2rem;
+}
+
+form {
+  flex-direction: column;
+}
+
+.raffle {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  justify-content: space-around;
+}
+
+fieldset {
+  border: none;
+}
+
+.fiel-uno {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fiel-dos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  gap: 0.3rem;
+}
+
+.fiel-tres {
+  display: flex;
+  flex-direction: column;
+}
+
+h4 {
+  margin-bottom: 2rem;
+}
+
+textarea {
+  width: 20rem;
+  height: 8rem;
+  margin-bottom: 5px;
+}
+
+.conditions {
+  font-size: small;
+  margin-right: 2.3rem;
+}
+
+/*TABLET*/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header > div {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-travel {
+    margin: 0;
+  }
+
+  header > section img {
+    width: 90vw;
+    height: 50vh;
+    border: 2px solid rgb(233, 38, 200);
+  }
+
+  .home-div > div {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  main > div img {
+    width: 25rem;
+    height: 15rem;
+    border: 2px solid rgb(233, 38, 200);
+    font-size: 1.4rem;
+  }
+
+  div p {
+    width: 40rem;
+    height: 8rem;
+    font-size: 1.3rem;
+    border: 2px solid rgb(233, 38, 200);
+    text-align: center;
+  }
+
+  .about-div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-div img {
+    margin-bottom: 1rem;
+  }
+
+  .about-div p {
+    margin: 0rem;
+  }
+
+  .contenido-principal > .div-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .uno {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #parrafo-contact {
+    text-align: start;
+  }
+  #benefits-list > div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .lista1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    gap: 0;
+  }
+  .lista1 li {
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .lista1 img {
+    width: 50vw;
+    height: 45vh;
+  }
+
+  .lista2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    gap: 0;
+  }
+
+  .lista2 li {
+    align-items: center;
+    width: 40vw;
+    margin-top: 1rem;
+  }
+
+  .lista2 img {
+    width: 50vw;
+    height: 45vh;
+  }
+
+  .raffle {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .mapa {
+    margin-top: 2rem;
+  }
+}
+
+/*CELULAR*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  header > div {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .home-div > div {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-travel {
+    margin: 0;
+  }
+
+  header > section img {
+    width: 18rem;
+    height: 10rem;
+    border: 2px solid rgb(233, 38, 200);
+  }
+
+  .contenido-principal > div {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .information-div table {
+    width: 90vw;
+  }
+
+  main > div img {
+    width: 15rem;
+    height: 10rem;
+    border: 2px solid rgb(233, 38, 200);
+    font-size: 1.4rem;
+  }
+
+  div p {
+    width: 20rem;
+    height: 8rem;
+    font-size: 1rem;
+    border: 2px solid rgb(233, 38, 200);
+    text-align: center;
+  }
+
+  .about-div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-div img {
+    margin-bottom: 1rem;
+  }
+
+  .about-div p {
+    margin: 0rem;
+  }
+
+  .contenido-principal > .div-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .uno {
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+  }
+
+  #parrafo-contact {
+    text-align: start;
+    height: 4rem;
+  }
+
+  .boat {
+    width: 70vw;
+    height: 40vh;
+  }
+
+  #benefits-list > div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .lista1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    gap: 0;
+  }
+  .lista1 li {
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .lista1 img {
+    width: 50vw;
+    height: 35vh;
+  }
+
+  .lista2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    text-align: center;
+    gap: 0;
+  }
+
+  .lista2 li {
+    align-items: center;
+    width: 90vw;
+    margin-top: 1rem;
+  }
+
+  .lista2 img {
+    width: 50vw;
+    height: 35vh;
+  }
+
+  .raffle {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .mapa {
+    margin-top: 2rem;
+  }
+
+  iframe {
+    width: 350px;
+    height: 300px;
+    margin-left: 1rem;
+  }
+}
